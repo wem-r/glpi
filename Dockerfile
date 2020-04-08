@@ -24,8 +24,8 @@ jq
 
 #Copie et execution du script pour l'installation et l'initialisation de GLPI
 COPY glpi-start.sh /opt/
-RUN chmod +x /opt/glpi-start.sh
-ENTRYPOINT ["/opt/glpi-start.sh"]
+RUN chmod +x /opt/glpi.sh
+ENTRYPOINT ["/opt/glpi.sh"]
 
 #Exposition des ports
 EXPOSE 80 443
