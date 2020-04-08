@@ -22,10 +22,8 @@ cron \
 wget \
 jq
 
-#Copie et execution du script pour l'installation et l'initialisation de GLPI
 COPY glpi.sh /opt/
 RUN chmod +x /opt/glpi.sh
 ENTRYPOINT ["/opt/glpi.sh"]
 
-#Exposition des ports
 EXPOSE 80 443
