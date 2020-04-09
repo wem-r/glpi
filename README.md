@@ -9,7 +9,7 @@ docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=glpidb -e 
 ```bash
 docker run --name glpi --link mysql:mysql --volume /var/www/html/glpi:/var/www/html/glpi -p 80:80 -d wemr/glpi
 ```
-##info de connection pour l'installation
+## info de connection pour l'installation
 
 Serveur SQL (MariaDB ou MySQL): mysql
 
